@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Receta de Pepas">
+    <meta name="keywords" content="pepas, receta, membrillo, cocina, masitas, dulce, merienda, desayuno, osvaldo gross">
+    <meta name="author" content="Tomas Duarte">
     <title>Pepas-Receta de cocina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./fontello-a540fdbf/css/fontello.css">
+  <script>alert("¡Bienvenidos,vamos a cocinar juntos!")</script>
   
     
 </head>
-<body>
-    
+<body id="body">
     <header>
+        
         <div class="contenedor"> 
-        <div class="texto-contenedor">
-            <div class="texto-subcontenedor"><h1>Receta de Pepas</h1></div>
+        <div id="header-subcontenedor" class="texto-contenedor">
+            <div  class="texto-subcontenedor"><h1 id="texto-subcontenedor">Receta de Pepas</h1></div>
             <div class="sub-contenedor">
                 <img class="imagen-logo" src="./Imagenes/logo.png" alt="">
                 <p class="epigrafe">Aprende a hacer estas deliciosas pepas</p>
-        <div >
+        <div class="contenedor-logos" >
             <a target="_blank" href="https://www.instagram.com/"> <img class="logosheader" src="./Imagenes/header1.png" alt="Instagram"></a>
     <a target="_blank" href="https://www.facebook.com/?locale=es_LA"> <img class="logosheader" src="./Imagenes/header2.png" alt="Facebook"></a>
     <a target="_blank" href="https://www.tiktok.com/es/"> <img class="logosheader" src="./Imagenes/header3.png" alt="Tiktok"></a>
@@ -29,12 +34,16 @@
         </div>
     </header>
 
-    <nav>
+    <nav id="nav">
         <a class="ir" href="./contactos.html"> Contactos</a>
-<a   target="_blank" href="https://elgourmet.com/recetas/bizcochitos-de-grasa/">Bizcochitos de grasa</a>
-<a  target="_blank" href="https://elgourmet.com/recetas/coquitos-2/">Coquitos</a>
-<a target="_blank" href="https://elgourmet.com/recetas/chipa-por-juan-manuel-herrera/">Chipa</a>
-<a target="_blank" href="https://elgourmet.com/recetas/rosquitas-blancas/">Rosquitas Blancas</a>
+<a  id="nav1" target="_blank" href="https://elgourmet.com/recetas/bizcochitos-de-grasa/">Bizcochitos de grasa</a>
+<a id="nav2"  target="_blank" href="https://elgourmet.com/recetas/coquitos-2/">Coquitos</a>
+<a id="nav3"  target="_blank" href="https://elgourmet.com/recetas/chipa-por-juan-manuel-herrera/">Chipa</a>
+<a id="nav4"  target="_blank" href="https://elgourmet.com/recetas/rosquitas-blancas/">Rosquitas Blancas</a>
+<button  id="oscuro" onclick="oscuro()" type="button" class="btn btn-dark">Modo oscuro</button>
+<button  id="claro" onclick="claro()" type="button" class="btn btn-dark">Modo claro</button>
+
+
     </nav>
 
     
@@ -75,26 +84,77 @@
 </main>
     <br><br>
    <aside>
-    <div class="texto-contenedor-2"><h2>Un poco más sobre las Pepas</h2>
+    <div id="aside" class="texto-contenedor-2"><h2>Un poco más sobre las Pepas</h2>
     <p>Las galletitas Pepas son un clásico de la repostería argentina. Estas deliciosas galletas se caracterizan por tener una base de masa suave y un centro de dulce de membrillo, aunque también pueden encontrarse con dulce de batata o dulce de leche. Su origen se remonta a la influencia de la inmigración europea en Argentina, especialmente de Italia y España, donde las recetas de galletas y pasteles eran comunes.
 
         Las Pepas son muy populares en las meriendas y desayunos argentinos, y suelen acompañarse con mate o café.</p></div>
    <div class="imagen-mate"> <img src="./Imagenes/mate.jpg" alt="Mate con pepas"></div>
-        <div class="mapa-contenedor"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17853339.33211225!2d-74.59377400339339!3d-39.576194983465776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1726694804136!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-</aside>
+        <div class="mapa-contenedor"><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17853339.33211225!2d-74.59377400339339!3d-39.576194983465776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1726694804136!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="argentina"> <img src="./Imagenes/argentina.jpg" alt="Mapa de Argentina"></div>
+    </aside>
 </section>
-<footer>
+<section class="section-tarjetas"> 
+    <div class="container">
+        <div class="row">
+           
+            <div class="tarjeta1 col-sm-12 col-md-6 col-lg-3">
+                <img src="./Imagenes/medialunas.webp" class="card-img-top" alt="medialunas">
+                <div class="card-body">
+                  <h5 class="card-title">Medialunas</h5>
+                  <p class="card-text">Las medialunas son un tipo de pan dulce muy popular en países como Argentina. Son esponjosas y suelen servirse en el desayuno o la merienda, pueden ir con mate tambien.</p>
+                  <a href="https://elgourmet.com/recetas/medialunas-de-manteca-de-juan-manuel-herrera/" class="btn btn-danger">Ir</a>
+                </div></div>
+
+                
+            <div class="tarjeta2 col-sm-12 col-md-6 col-lg-3">
+                <img src="./Imagenes/pastafrola.jpg" class="card-img-top" alt="pastafrola">
+                <div class="card-body">
+                  <h5 class="card-title">Pastafrola</h5>
+                  <p class="card-text">La pastafrola es un postre típico de la cocina argentina y uruguaya, que consiste en una masa dulce y se suele rellenar con dulce de membrillo, dulce de leche, o mermeladas.</p>
+                  <a href="https://elgourmet.com/recetas/pasta-frola-2/" class="btn btn-danger">Ir</a>
+                </div></div>
+
+                
+            <div class="tarjeta3 col-sm-12 col-md-6 col-lg-3">
+                <img src="./Imagenes/pastelitos.jpg" class="card-img-top" alt="pastelitos">
+                <div class="card-body">
+                  <h5 class="card-title">Pastelitos</h5>
+                  <p class="card-text">Los pastelitos criollos  o pastelitos dulces, son un tipo de pastel dulce de la cocina de Argentina, Paraguay y Uruguay, hechos con una masa crocante y hojaldrada.</p>
+                  <a href="https://elgourmet.com/recetas/pastelitosfritos/" class="btn btn-danger">Ir</a>
+                </div></div>
+
+                
+            <div class="tarjeta4 col-sm-12 col-md-6 col-lg-3">
+                <img src="./Imagenes/churros.jpg" class="card-img-top" alt="churros">
+                <div class="card-body">
+                  <h5 class="card-title">Churros</h5>
+                  <p class="card-text">El churro es un producto de repostería frito, elaborado principalmente con una masa que contiene agua, harina de trigo, aceite y sal. Muy comidos en Argentina</p>
+                  <a href="https://elgourmet.com/recetas/churros-por-juan-manuel-herrera/" class="btn btn-danger">Ir</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+
+</section>
+<br>
+<footer id="footer">
     <div class="foot1"><iframe class="mapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52575.72770385378!2d-58.77750480503537!3d-34.55398628056455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd7f8ed7ed6f%3A0xa141f13ddb761d51!2sB1663%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728692546959!5m2!1ses-419!2sar"  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
    <div class="foot2"> <a target="_blank" href="https://www.instagram.com/"> <img class="logos" src="./Imagenes/instagram.png" alt="Instagram"></a>
     <a target="_blank" href="https://www.facebook.com/?locale=es_LA"> <img class="logos" src="./Imagenes/facebook.png" alt="Facebook"></a>
     <a target="_blank" href="https://www.tiktok.com/es/"> <img class="logos" src="./Imagenes/tik-tok.png" alt="Tiktok"></a>
     <a target="_blank" href="https://x.com/?lang=es"> <img class="logos" src="./Imagenes/x.png" alt="X"></a></div>
-    <div class="foot3"><p>Duarte Almaras Tomas Leonel
-        almarasduatomas@gmail.com
-    </p> </div>
+    <div class="foot3"><p id="gmail">Duarte Almaras Tomas Leonel
+        almarasduatomas@gmail.com</p>
+        <button id="datos" onclick="datos()" type="button" class="btn btn-light">Datos</button>
+ </div>
 
 </footer>
 <a href="https://api.whatsapp.com/send?phone=1139207891" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./Javascrip.js"></script>
 
 </body>
 </html> 

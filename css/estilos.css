@@ -10,15 +10,15 @@ h1{font-family: "Montserrat", sans-serif;
         font-weight: 500;
         font-style: normal;font-size: 20px;color: white; text-align: center;}
 .contenedor{ display: flex;align-items: center;}
-.texto-contenedor{background-color: crimson ;display: flex;flex-direction: column;justify-content: center;flex-grow: 2;max-width: 54%;padding:2.7%;align-items: center; }
-.imagen-contenedor{display: flex;align-items: center;flex-grow: 1;justify-content: flex-start;max-width: 43%; margin-left: 0px; margin-right: 0px;}
+.texto-contenedor{background-color: crimson ;display: flex;flex-direction: column;justify-content: center;flex-grow: 1;max-width: 54%;;align-items: center; padding-top:7.3%; padding-bottom: 7.3%;}
+.imagen-contenedor{display: flex;align-items: center; flex-grow: 2;justify-content: right;max-width: 47%; margin-left: 0px; margin-right: 0px; background-color: #0df053;}
 img {max-width: 100%; }
 .imagen-logo{width: 150px}
 .logosheader{ width:50px;}
 .logosheader:hover{ background-color: black;border-radius: 15px;}
 .sub-contenedor{ display:flex; flex-direction: row; align-items: center; max-width: 800px;; justify-content: space-around;}
 .texto-subcontenedor{ padding: 0%; max-width: 800px; max-height: 200px;}
-header{display: flex;flex-wrap: wrap; width: 97.8vw; height: 59vh; }
+header{display: flex;flex-wrap: wrap; width: 99vw;height: 65vh; }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .subtitulos{ font-family: "Montserrat", sans-serif;
@@ -65,7 +65,25 @@ p{font-family: "Montserrat", sans-serif;
     .foot1{ max-height: 300px; }
     .mapa{ max-height: 250px;}
     .foot2{ display: flex; justify-content: space-between; align-items: center; width: 700px;}
-    .foot3{ display: flex; max-width: 365px;align-items: center;}
+    .foot3{ display: flex; max-width: 365px;align-items: center;flex-direction: column;justify-content: center;}
     .ir{color: #000000;}
     .head-contactos{background-color: crimson; align-items: center; justify-content: center; max-height: 50vh;}
     .section-contactos{display:flex; height: 100vh;}
+    
+    @media (min-width:992px){.argentina{display: none;}}
+    @media (min-width:768px) and (max-width: 991px) {h1{font-size: 40px;} .subtitulos{font-size: 25px;}.imagen-logo{max-width: 100px;}.logosheader{max-width: 35px;}li{font-size: 15px;} a{font-size: 12px;}.imagen-contenedor{max-width: 402px;}.texto-contenedor{padding: 50px;padding-left: 40px;padding-right: 45px;padding-top: 62px ;}
+      h2{font-size: 25px;}p{font-size: 15px;}.mapa-contenedor{display: none;}iframe{max-width: 350px;max-height: 200px;}.logos{max-width: 50px;max-height: 50px;}.mapa{max-width:250px ; max-height: 200px;} .epigrafe{font-size:20px} header{max-height: 268px; max-width: 950px;} footer{max-height: 400px;} .argentina{max-width: 248px;margin-left: 5px;}.tarjeta1{margin-top: 100px;} .tarjeta2{margin-top: 100px;} 
+    }
+    @media (orientation: landscape) and  (min-width:576px) and (max-width: 767px)  {h1{font-size: 30px;} .subtitulos{font-size: 25px;}.imagen-logo{max-width: 100px;}.logosheader{max-width: 45px;}li{font-size: 15px;} a{font-size: 12px;}.imagen-contenedor{max-width: 280px;}.texto-contenedor{padding: 2px;padding-left: 40px;padding-right: 3px; padding-top: 20px;padding-bottom: 20px;}
+    h2{font-size: 25px;}p{font-size: 15px;}.mapa-contenedor{display: none;}iframe{max-width: 350px;max-height: 200px;}.logos{max-width: 50px;max-height: 50px;}.mapa{max-width:250px ; max-height: 200px;}  .epigrafe{font-size:10px} header{max-height: 185px; max-width: 685px;} .argentina{max-width:175px ; margin-left: 5px;} .tarjeta1{margin-top: 1300px;}footer{margin-top: 2200px;min-height: 350px;}
+
+  }
+    @media (max-width: 575px) {h1{font-size: 20px;} .subtitulos{font-size: 25px;}.imagen-logo{max-width: 70px;}.logosheader{max-width: 30px;}li{font-size: 15px;} a{font-size: 12px;}.imagen-contenedor{max-width: 218px;}.texto-contenedor{padding: 10px;padding-left: 25px;padding-right: 3px; padding-top: 21px; padding-bottom: 21px;}
+    h2{font-size: 25px;}p{font-size: 15px;}.mapa-contenedor{display: none;}iframe{max-width: 350px;max-height: 200px;}.logos{max-width: 50px;max-height: 50px;}.mapa{max-width:250px ; max-height: 200px;}  .epigrafe{font-size:10px} header{max-height: 145px; max-width: 535px;}.argentina{max-width: 135px;margin-left: 5px;} .tarjeta1{margin-top: 300px;}footer{margin-top: 300px;}
+
+  }
+    .card-text{ font-size: 20px;color: #000000;text-align: center; }    
+    .card-title{ display: flex;justify-content: center;text-decoration: underline; color: crimson; margin-top: 10px; margin-bottom: 20px;}
+    .card-body{ background-color: white; height: 300px; display: flex;  flex-direction: column;}
+    .card-img-top {max-height: 170px; }
+   #claro{display: none;}
