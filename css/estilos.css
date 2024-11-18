@@ -80,10 +80,13 @@ p{font-family: "Montserrat", sans-serif;
   }
     @media (max-width: 575px) {h1{font-size: 20px;} .subtitulos{font-size: 25px;}.imagen-logo{max-width: 70px;}.logosheader{max-width: 30px;}li{font-size: 15px;} a{font-size: 12px;}.imagen-contenedor{max-width: 218px;}.texto-contenedor{padding: 10px;padding-left: 25px;padding-right: 3px; padding-top: 21px; padding-bottom: 21px;}
     h2{font-size: 25px;}p{font-size: 15px;}.mapa-contenedor{display: none;}iframe{max-width: 350px;max-height: 200px;}.logos{max-width: 50px;max-height: 50px;}.mapa{max-width:250px ; max-height: 200px;}  .epigrafe{font-size:10px} header{max-height: 145px; max-width: 535px;}.argentina{max-width: 135px;margin-left: 5px;} .tarjeta1{margin-top: 300px;}footer{margin-top: 300px;}
-
+   nav{font-size: 10px;}#oscuro{max-width: 30px; max-height: 20px; font-size: 0px;}#claro{max-width: 30px; max-height: 20px; font-size: 0px;}#tarjetas{margin-top: -300px;}
   }
     .card-text{ font-size: 20px;color: #000000;text-align: center; }    
-    .card-title{ display: flex;justify-content: center;text-decoration: underline; color: crimson; margin-top: 10px; margin-bottom: 20px;}
+    .card-title{ display: flex;justify-content: center;text-decoration: underline; color: crimson; margin-top: 10px; }
     .card-body{ background-color: white; height: 300px; display: flex;  flex-direction: column;}
     .card-img-top {max-height: 170px; }
    #claro{display: none;}
+   #tarjetas{margin-top: 300px;}
+   .datos1{display: flex;align-items: center; justify-content: center;}
+  .inicio{max-width: 100% ; display: flex; justify-content: center; align-items: center;}
