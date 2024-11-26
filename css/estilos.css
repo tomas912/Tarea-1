@@ -67,8 +67,8 @@ p{font-family: "Montserrat", sans-serif;
     .foot2{ display: flex; justify-content: space-between; align-items: center; width: 700px;}
     .foot3{ display: flex; max-width: 365px;align-items: center;flex-direction: column;justify-content: center;}
     .ir{color: #000000;}
-    .head-contactos{background-color: crimson; align-items: center; justify-content: center; max-height: 50vh;}
-    .section-contactos{display:flex; height: 100vh;}
+    .head-contactos{background-color: crimson; align-items: center; justify-content: center; max-height: 30vh;max-width:98vw ;}
+    .section-contactos{display:flex; height: 80vh;}
     
     @media (min-width:992px){.argentina{display: none;}}
     @media (min-width:768px) and (max-width: 991px) {h1{font-size: 40px;} .subtitulos{font-size: 25px;}.imagen-logo{max-width: 100px;}.logosheader{max-width: 35px;}li{font-size: 15px;} a{font-size: 12px;}.imagen-contenedor{max-width: 402px;}.texto-contenedor{padding: 50px;padding-left: 40px;padding-right: 45px;padding-top: 62px ;}
